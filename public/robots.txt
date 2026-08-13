@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://epscorner.com/sitemap.xml
