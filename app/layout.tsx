@@ -1,43 +1,43 @@
-import type { Metadata } from "next";
-import "./globals.css";
+import type { Metadata } from 'next';
+import './globals.css';
 
-const SITE_URL = "https://epscorner.com";
+const SITE_URL = 'https://epscorner.com';
 
 export const metadata: Metadata = {
   title: {
-    default: "EPS Corner — EPS-TOPIK, KLT & SCBT Reviewer for OFWs",
-    template: "%s | EPS Corner",
+    default: 'EPS Corner — EPS-TOPIK, KLT & SCBT Reviewer',
+    template: '%s | EPS Corner',
   },
   description:
-    "Free and premium EPS-TOPIK, KLT, and SCBT reviewer for Filipino workers applying for jobs in Korea. Practice real exam-format questions for reading, listening, and all 8 SCBT categories. Join the waitlist for early access.",
+    'Free and premium EPS-TOPIK, KLT, and SCBT reviewer for foreign workers applying for jobs in Korea under the EPS employment program. Practice real exam-format questions for reading, listening, and all 8 SCBT categories. Join the waitlist for early access.',
   keywords: [
-    "EPS-TOPIK reviewer",
-    "EPS TOPIK Philippines",
-    "KLT reviewer",
-    "SCBT reviewer",
-    "EPS TOPIK practice test",
-    "Korean language test for OFW",
-    "EPS TOPIK Philippines review",
-    "SCBT exam Korea job",
+    'EPS-TOPIK reviewer',
+    'EPS TOPIK practice test',
+    'KLT reviewer',
+    'SCBT reviewer',
+    'Korean language test for EPS workers',
+    'EPS employment permit system exam',
+    'SCBT exam Korea job',
+    'EPS partner countries',
   ],
   metadataBase: new URL(SITE_URL),
   alternates: {
-    canonical: "/",
+    canonical: '/',
   },
   openGraph: {
-    title: "EPS Corner — EPS-TOPIK, KLT & SCBT Reviewer for OFWs",
+    title: 'EPS Corner — EPS-TOPIK, KLT & SCBT Reviewer',
     description:
-      "Practice real EPS-TOPIK, KLT, and SCBT exam-format questions. Join the waitlist for early access.",
+      'Practice real EPS-TOPIK, KLT, and SCBT exam-format questions. Join the waitlist for early access.',
     url: SITE_URL,
-    siteName: "EPS Corner",
-    type: "website",
-    locale: "en_PH",
+    siteName: 'EPS Corner',
+    type: 'website',
+    locale: 'en_US',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "EPS Corner — EPS-TOPIK, KLT & SCBT Reviewer for OFWs",
+    card: 'summary_large_image',
+    title: 'EPS Corner — EPS-TOPIK, KLT & SCBT Reviewer',
     description:
-      "Practice real EPS-TOPIK, KLT, and SCBT exam-format questions. Join the waitlist for early access.",
+      'Practice real EPS-TOPIK, KLT, and SCBT exam-format questions. Join the waitlist for early access.',
   },
   robots: {
     index: true,
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      "max-image-preview": "large",
+      'max-image-preview': 'large',
     },
   },
   // Add this once you register the domain in Google Search Console —
@@ -54,16 +54,16 @@ export const metadata: Metadata = {
 };
 
 const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "EPS Corner",
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'EPS Corner',
   url: SITE_URL,
   description:
-    "Korean exam prep platform for Filipino workers preparing for EPS-TOPIK, KLT, and SCBT employment visa exams.",
-  areaServed: "PH",
+    'Korean exam prep platform for foreign workers from EPS partner countries preparing for EPS-TOPIK, KLT, and SCBT employment visa exams.',
   audience: {
-    "@type": "Audience",
-    audienceType: "Overseas Filipino Workers (OFW) applying under the EPS employment program",
+    '@type': 'Audience',
+    audienceType:
+      "Foreign workers from the 17 EPS partner countries applying under Korea's Employment Permit System (EPS)",
   },
 };
 

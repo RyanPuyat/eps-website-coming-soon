@@ -12,7 +12,7 @@ const faqJsonLd = {
       name: 'What is EPS-TOPIK?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'EPS-TOPIK is the Korean language proficiency exam required for foreign workers from 17 partner countries applying to work in Korea under the Employment Permit System (EPS). Passing it is one of the first steps toward an EPS job placement.',
+        text: 'EPS-TOPIK is the Korean language proficiency exam required for foreign workers from EPS partner countries applying to work in Korea under the Employment Permit System (EPS). Passing it is one of the first steps toward an EPS job placement.',
       },
     },
     {
@@ -28,7 +28,15 @@ const faqJsonLd = {
       name: 'What is SCBT and which categories does it cover?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'SCBT (Skills Competency-Based Test) evaluates job-specific knowledge after you pass the language exam. EPS Corner covers all eight SCBT categories: chemical, electronics, food manufacturing, machinery, metal, paper, rubber, and textile.',
+        text: 'SCBT (Special Computer-Based Test) is for ex-EPS workers who completed their first Korea work contract and want to return for another EPS placement. You choose one of 8 job categories, and your test covers that category plus 12 common sections.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is SCBT the same as EPS-TOPIK or KLT?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'No. EPS-TOPIK and KLT are language exams for first-time EPS applicants. SCBT is a separate exam only for ex-EPS workers who completed a previous Korea work contract and are re-applying for another EPS placement.',
       },
     },
     {
@@ -99,8 +107,8 @@ export default function Home() {
           </h1>
           <p className="lede">
             EPS Corner is a Korean exam-prep platform built around real
-            EPS-TOPIK, KLT, and SCBT question formats — for Filipino workers
-            preparing for their shot at employment in Korea.
+            EPS-TOPIK, KLT, and SCBT question formats — for workers from EPS
+            partner countries preparing for their shot at employment in Korea.
           </p>
 
           <div className="exams">
@@ -111,9 +119,13 @@ export default function Home() {
               <b>KLT</b> · Korean language test
             </div>
             <div className="exam-chip">
-              <b>SCBT</b> · skills competency
+              <b>SCBT</b> · special computer-based test
             </div>
           </div>
+          <p className="exam-note">
+            EPS-TOPIK / KLT is for first-time EPS applicants. SCBT is for ex-EPS
+            workers who finished their first Korea contract and are re-applying.
+          </p>
 
           <div className="form-block">
             <form onSubmit={handleSubmit}>
@@ -208,10 +220,10 @@ export default function Home() {
           </div>
           <div className="strip-item">
             <span className="num">SCBT</span>
-            <h3>All 8 job categories</h3>
+            <h3>For returning EPS workers</h3>
             <p>
-              Chemical, electronics, food, machinery, metal, paper, rubber, and
-              textile — covered individually.
+              Pick your job category, get that category&apos;s content plus the
+              12 common sections everyone needs.
             </p>
           </div>
         </div>
@@ -224,7 +236,7 @@ export default function Home() {
           <h3>What is EPS-TOPIK?</h3>
           <p>
             EPS-TOPIK is the Korean language proficiency exam required for
-            foreign workers from 17 partner countries applying to work in Korea
+            foreign workers from EPS partner countries applying to work in Korea
             under the Employment Permit System (EPS). Passing it is one of the
             first steps toward an EPS job placement.
           </p>
@@ -243,10 +255,20 @@ export default function Home() {
         <div className="faq-item">
           <h3>What is SCBT and which categories does it cover?</h3>
           <p>
-            SCBT (Skills Competency-Based Test) evaluates job-specific knowledge
-            after you pass the language exam. EPS Corner will cover all eight
-            SCBT categories: chemical, electronics, food manufacturing,
-            machinery, metal, paper, rubber, and textile.
+            SCBT (Special Computer-Based Test) is for ex-EPS workers who
+            completed their first Korea work contract and want to return for
+            another EPS placement. You choose one of 8 job categories, and your
+            test covers that category plus 12 common sections.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h3>Is SCBT the same as EPS-TOPIK or KLT?</h3>
+          <p>
+            No. EPS-TOPIK and KLT are language exams for first-time EPS
+            applicants. SCBT is a separate exam only for ex-EPS workers who
+            completed a previous Korea work contract and are re-applying for
+            another EPS placement.
           </p>
         </div>
 
