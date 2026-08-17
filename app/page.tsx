@@ -148,7 +148,17 @@ export default function Home() {
             </form>
             <p className="form-note">
               No spam — just an email when EPS Corner opens.{' '}
-              <strong>Free tier</strong> available at launch.
+              <strong>Free tier</strong> available at launch. Or connect with us
+              on{' '}
+              <a
+                href="https://www.facebook.com/profile.php?id=61575153871319"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'underline' }}
+              >
+                Facebook
+              </a>
+              .
             </p>
             <div
               className={`success-msg ${status === 'success' ? 'show' : ''}`}
